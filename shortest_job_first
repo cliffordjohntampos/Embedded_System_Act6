@@ -1,0 +1,44 @@
+/*
+  TAMPOS - Shortest Job First
+*/
+
+void setup()
+{
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(5, OUTPUT);
+}
+
+void loop()
+{
+  /* The LED with the shortest time will
+  	 start first and ends with the longest */
+  
+  // BLUE LED
+  digitalWrite(5, HIGH);
+  delay(1000); // Wait for 1 sec
+  digitalWrite(5, LOW);
+  // YELLOW LED
+  digitalWrite(10, HIGH);
+  delay(2000); // Wait for 2 secs
+  digitalWrite(10, LOW);
+  // ORANGE LED
+  digitalWrite(7, HIGH);
+  delay(3000); // Wait for 3 secs
+  digitalWrite(7, LOW);
+  // GREEN LED
+  digitalWrite(12, HIGH);
+  delay(5000); // Wait for 5 secs
+  digitalWrite(12, LOW);
+  // WHITE LED
+  digitalWrite(9, HIGH);
+  delay(7000); // Wait for 7 secs
+  digitalWrite(9, LOW);
+  // RED LED
+  digitalWrite(13, HIGH);
+  delay(10000); // Wait for 10 secs
+  digitalWrite(13, LOW);
+}
